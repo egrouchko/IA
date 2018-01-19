@@ -16,5 +16,10 @@ namespace InvestabitAssessment
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            IEnumerable<DataClass> x = DataClass.GetSymbolSeries("ETHUSD");
+        }
     }
 }
